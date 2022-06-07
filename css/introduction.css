@@ -1,0 +1,100 @@
+.introduction {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 100px;
+}
+
+.introduction h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.introduction h1::before {
+  content: '';
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url(../img/detalhe.svg);
+  position: absolute;
+  top: -30px;
+  left: -40px;
+  z-index: -1;
+}
+
+.introduction-github {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.introduction-github a{
+  text-decoration: none;
+  color: #141414;
+  font-size: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.introduction-github a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 1000px) {
+  .introduction h1 {
+    font-size: 3rem;
+  }
+  .introduction h1::before {
+    width: 130px;
+    height: 80px;
+    left: -60px;
+    top: -25px;
+}
+}
+
+@media (max-width: 800px) {
+  .introduction {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .introduction h1 {
+    font-size: 2rem;
+  }
+
+  .introduction h1::before {
+      width: 130px;
+      height: 60px;
+      left: -60px;
+      top: -25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .introduction {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .introduction-perfil {
+    display: none;
+  }
+  .introduction h1::before {
+    width: 130px;
+    height: 70px;
+    left: 50px;
+    top: -25px;
+  }
+  .introduction h1{
+    margin-bottom: 20px;
+  }
+  .introduction-github {
+    gap: 0;
+    opacity: 1;
+    font-weight: bold;
+    background-color: #f5f5f5;
+  }
+}
+
