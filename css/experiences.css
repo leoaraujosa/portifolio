@@ -1,0 +1,73 @@
+.experience {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.experience .subtitle {
+  color: #e0e0e0;
+  font-size: 4rem;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  background: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 2px solid #f5f5f5;
+}
+
+.project:hover {
+  border-left: 2px solid greenyellow;
+  cursor: pointer;
+}
+
+.project-title {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.project-description {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #525252;
+}
+
+.project-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+@media (max-width: 800px) {
+  .experience {
+    grid-template-columns: 1fr;
+    padding: 0px 20px;
+  }
+  .experience .subtitle {
+    font-size: 3.5rem;
+    max-width: 100%;
+    text-align: center;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #141414;
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 500px) {
+  .experience .subtitle {
+    font-size: 3rem;
+  }
+}
