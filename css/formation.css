@@ -124,3 +124,85 @@
   top: -5px;
   left: -35px;
 }
+
+@media (max-width: 1200px) {
+ .formation-infos {
+   grid-template-columns: 1fr;
+ }
+
+  .formation-graduate p {
+    font-size: 1.2rem;
+    max-width: 60ch;
+  }
+
+  .formation-extra {
+    width: 500px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .formation-graduate p {
+    font-size: 1.1rem;
+    max-width: 60ch;
+  }
+}
+
+@media (max-width: 600px) {
+  .list-cards li{
+    padding: 10px;
+  }
+
+  .card h3::before {
+    background: greenyellow;
+    left: -15px;
+  }
+
+  .formation-extra {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .list-cards {
+    flex-direction: column;
+  }
+
+  .formation-extra {
+    width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .formation-extra {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .formation-extra li, .formation-extra span {
+    font-size: 0.8rem;
+  }
+
+  .formation-graduate p {
+    font-size: 1rem;
+    max-width: 50ch;
+  }
+}
+
+@media (max-width: 360px) {
+  .formation .subtitle {
+    font-size: 3rem;
+  }
+
+  .courses-list li::before {
+    display: none;
+  }
+
+  .formation-languages span::before {
+    display: none;
+  }
+}

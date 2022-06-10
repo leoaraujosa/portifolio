@@ -71,3 +71,10 @@
     font-size: 3rem;
   }
 }
+
+@media (max-width: 360px) {
+  .experience .subtitle {
+    font-size: 2rem;
+    padding: 10px 0;
+  }
+}
